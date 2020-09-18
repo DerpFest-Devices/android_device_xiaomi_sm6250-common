@@ -652,4 +652,7 @@
      regularly selected color mode will be used if this value is negative. -->
     <integer name="config_accessibilityColorMode">2</integer>
 
+    <!-- Flag indicating whether we should enable the adaptive sleep.-->
+    <bool name="config_adaptive_sleep_available">true</bool>
+
 </resources>
