@@ -108,3 +108,6 @@ persist.debug.wfd.enable=1
 persist.sys.wfd.virtual=0
 
 ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural
+
+# SurfaceFlinger brightness tweak
+ro.sf.force_light_brightness=1
