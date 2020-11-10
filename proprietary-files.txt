@@ -298,7 +298,6 @@ vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service
 vendor/bin/hw/vendor.qti.hardware.servicetracker@1.1-service
 vendor/bin/hw/vendor.qti.hardware.soter@1.0-service
 vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
-vendor/bin/hw/vendor.qti.hardware.vibrator@1.2-service
 vendor/bin/hw/vendor.qti.power.pasrmanager@1.0-service
 vendor/bin/hw/vendor.xiaomi.hardware.displayfeature@1.0-service
 vendor/bin/hw/vendor.xiaomi.hardware.misys@1.0-service
@@ -604,7 +603,6 @@ vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc
 vendor/etc/init/vendor.qti.hardware.servicetracker@1.1-service.rc
 vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc
 vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
-vendor/etc/init/vendor.qti.hardware.vibrator@1.2-service.rc
 vendor/etc/init/vendor.qti.hardware.wifi.wifilearner@1.0-service.rc
 vendor/etc/init/vendor.qti.hardware.wigig.supptunnel@1.0-service.rc
 vendor/etc/init/vendor.qti.power.pasrmanager@1.0-service.rc
