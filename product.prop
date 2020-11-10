@@ -17,3 +17,6 @@ ro.build.fingerprint=google/coral/coral:10/QQ3A.200805.001/6578210:user/release-
 # Blur
 ro.surface_flinger.supports_background_blur=1
 ro.sf.blurs_are_expensive=1
+
+# Use Vulkan backend for Skia UI rendering
+debug.hwui.renderer=skiavk
