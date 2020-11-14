@@ -1331,7 +1331,6 @@ vendor/lib/libqservice.so
 vendor/lib/libqsocket.so
 vendor/lib/libQTEEConnector_vendor.so
 vendor/lib/libqti-utils.so
-vendor/lib/libqti_vndfwk_detect.so
 vendor/lib/libqtigef.so
 vendor/lib/libqtikeymaster4.so
 vendor/lib/librcc.so
@@ -2067,7 +2066,6 @@ vendor/lib64/libqservice.so
 vendor/lib64/libqsocket.so
 vendor/lib64/libQTEEConnector_vendor.so
 vendor/lib64/libqti-utils.so
-vendor/lib64/libqti_vndfwk_detect.so
 vendor/lib64/libqtigef.so
 vendor/lib64/libqtikeymaster4.so
 vendor/lib64/librcc.so
