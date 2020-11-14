@@ -79,6 +79,10 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     libqti_vndfwk_detect.vendor
 
+# Fingerprint
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint@2.1-service.xiaomi_sm6250
+
 # AVB
 PRODUCT_PACKAGES += \
     q-gsi.avbpubkey \
