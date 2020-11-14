@@ -75,6 +75,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     qcom.fmradio
 
+# Framework detect
+PRODUCT_PACKAGES += \
+    libqti_vndfwk_detect.vendor
+
 # AVB
 PRODUCT_PACKAGES += \
     q-gsi.avbpubkey \
