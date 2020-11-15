@@ -627,12 +627,9 @@ vendor/etc/lm/prekill/prekill_6GB.data
 vendor/etc/lm/PreKillFeature.xml
 vendor/etc/lowi.conf
 vendor/etc/media_codecs.xml
-vendor/etc/media_codecs_google_audio.xml
 vendor/etc/media_codecs_google_c2.xml
 vendor/etc/media_codecs_google_c2_audio.xml
 vendor/etc/media_codecs_google_c2_video.xml
-vendor/etc/media_codecs_google_telephony.xml
-vendor/etc/media_codecs_google_video.xml
 vendor/etc/media_codecs_google_video_le.xml
 vendor/etc/media_codecs_performance.xml
 vendor/etc/media_codecs_vendor.xml
