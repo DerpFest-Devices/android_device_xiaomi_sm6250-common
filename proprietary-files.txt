@@ -626,12 +626,10 @@ vendor/etc/lm/prekill/prekill_4GB.data
 vendor/etc/lm/prekill/prekill_6GB.data
 vendor/etc/lm/PreKillFeature.xml
 vendor/etc/lowi.conf
-vendor/etc/media_codecs.xml
 vendor/etc/media_codecs_google_c2.xml
 vendor/etc/media_codecs_google_c2_audio.xml
 vendor/etc/media_codecs_google_c2_video.xml
 vendor/etc/media_codecs_google_video_le.xml
-vendor/etc/media_codecs_performance.xml
 vendor/etc/media_codecs_vendor.xml
 vendor/etc/media_codecs_vendor_audio.xml
 vendor/etc/media_profiles.xml
@@ -782,7 +780,6 @@ vendor/etc/spk_pb.wav
 vendor/etc/ssg/ta_config.json
 vendor/etc/ssg/tz_whitelist.json
 vendor/etc/SVIConfig.xml
-vendor/etc/system_properties.xml
 vendor/etc/thermal-engine.conf
 vendor/etc/usb_audio_policy_configuration.xml
 vendor/etc/wifi/aoa_cldb_falcon.bin
