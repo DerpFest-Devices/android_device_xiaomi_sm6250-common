@@ -402,7 +402,6 @@ vendor/bin/wpa_cli
 vendor/bin/xtra-daemon
 vendor/bin/xtwifi-client
 vendor/bin/xtwifi-inet-agent
-vendor/etc/a2dp_audio_policy_configuration.xml
 vendor/etc/acdbdata/adsp_avs_config.acdb
 vendor/etc/acdbdata/IDP/IDP_Bluetooth_cal.acdb
 vendor/etc/acdbdata/IDP/IDP_General_cal.acdb
@@ -423,7 +422,6 @@ vendor/etc/acdbdata/QRD/QRD_workspaceFile.qwsp
 vendor/etc/apdr.conf
 vendor/etc/audio_diag.cfg
 vendor/etc/audio_platform_info_qrd.xml
-vendor/etc/audio_policy_volumes.xml
 vendor/etc/bt_diag.cfg
 vendor/etc/cacert_location.pem
 vendor/etc/calib.config
@@ -520,7 +518,6 @@ vendor/etc/configstore/wigig.xml
 vendor/etc/data/dsi_config.xml
 vendor/etc/data/netmgr_config.xml
 vendor/etc/default.lm
-vendor/etc/default_volume_tables.xml
 vendor/etc/Diag.cfg
 vendor/etc/elliptic_sensor.xml
 vendor/etc/flp.conf
@@ -702,7 +699,6 @@ vendor/etc/qdcm_calib_data_td4328_cmd_mode_dsi_truly_panel.xml
 vendor/etc/qdcm_calib_data_td4328_video_mode_dsi_truly_panel.xml
 vendor/etc/qdcm_calib_data_td4330_cmd_mode_dsi_truly_panel.xml
 vendor/etc/qdcm_calib_data_td4330_video_mode_dsi_truly_panel.xml
-vendor/etc/r_submix_audio_policy_configuration.xml
 vendor/etc/sap.conf
 vendor/etc/scve/facereco/gModel.dat
 vendor/etc/sec_config
@@ -770,7 +766,6 @@ vendor/etc/ssg/ta_config.json
 vendor/etc/ssg/tz_whitelist.json
 vendor/etc/SVIConfig.xml
 vendor/etc/thermal-engine.conf
-vendor/etc/usb_audio_policy_configuration.xml
 vendor/etc/wifi/aoa_cldb_falcon.bin
 vendor/etc/wifi/aoa_cldb_swl14.bin
 vendor/etc/wifi/fstman.ini
