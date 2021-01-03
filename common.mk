@@ -411,3 +411,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
+
+#additional configs
+ADDITIONAL_BUILD_PROPERTIES += \
+    ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural
