@@ -1,4 +1,4 @@
-´soong_namespace {
+soong_namespace {
     imports: [
         "hardware/google/interfaces",
         "hardware/google/pixel",
