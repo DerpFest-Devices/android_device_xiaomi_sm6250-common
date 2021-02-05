@@ -1,4 +1,5 @@
 #============= init ==============
+allow init adsprpcd_file:file mounton;
 allow init proc_sched_energy_aware:file { open write };
 allow init self:qipcrtr_socket create;
 allow init sysfs:file { open write };
