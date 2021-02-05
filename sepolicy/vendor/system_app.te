@@ -1,0 +1,3 @@
+#============= system_app ==============
+#for rendethread
+allow system_app sysfs_msm_subsys:dir search;

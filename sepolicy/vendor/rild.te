@@ -1,0 +1,2 @@
+#============= rild ==============
+allow rild default_prop:file { getattr map open read };
