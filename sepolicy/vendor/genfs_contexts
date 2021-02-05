@@ -1,7 +1,7 @@
 
 # Battery only for joyeuse - excalibur
-genfscon sysfs /devices/platform/soc/soc:maxim_ds28e16/power_supply/    u:object_r:sysfs_battery_supply:s0
-genfscon sysfs /devices/platform/soc/soc:maxim_ds28e16/power_supply/batt_verify/type    u:object_r:sysfs_battery_supply:s0
+genfscon sysfs /devices/platform/soc/soc:maxim_ds28e16/power_supply/    u:object_r:vendor_sysfs_battery_supply:s0
+genfscon sysfs /devices/platform/soc/soc:maxim_ds28e16/power_supply/batt_verify/type    u:object_r:vendor_sysfs_battery_supply:s0
 
 #brightness
 genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/backlight/panel0-backlight/brightness   u:object_r:sysfs_graphics:s0

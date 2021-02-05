@@ -11,7 +11,7 @@ allow hal_fingerprint_default property_socket:sock_file write;
 allow hal_fingerprint_default init:unix_stream_socket connectto;
 
 allow hal_fingerprint_default {
-    fingerprint_device
+    fp_device
     tee_device
     uhid_device
 }:chr_file rw_file_perms;

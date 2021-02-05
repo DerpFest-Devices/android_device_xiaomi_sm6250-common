@@ -2,9 +2,14 @@
 /vendor/bin/batteryd		u:object_r:batteryd_exec:s0
 /vendor/bin/batterysecret		u:object_r:batterysecret_exec:s0
 /mnt/vendor/persist/subsys(/.*)?                u:object_r:persist_subsys_file:s0
+/sys/class/power_supply/battery/charging_enabled                    u:object_r:sysfs_scharge:s0
 
 # ConsumerIR
 /(vendor|system/vendor)/bin/hw/android\.hardware\.ir@1\.0-service\.miatoll                                          u:object_r:hal_ir_default_exec:s0
+
+#elliptic sensor
+/dev/elliptic1		u:object_r:sensors_device:s0
+/dev/elliptic0		u:object_r:sensors_device:s0
 
 # Fingerprint
 /data/gf_data(/.*)?                             u:object_r:fingerprintd_data_file:s0
@@ -14,6 +19,11 @@
 /dev/goodix_fp                                  u:object_r:fp_device:s0
 
 /vendor/bin/hw/android\.hardware\.fingerprint@2\.1-service\.xiaomi_sm6250                               u:object_r:hal_fingerprint_default_exec:s0
+
+# Hexagon DSP-side executable needed for Halide operation
+# This is labeled as public_adsprpcd_file as it needs to be read by apps
+# (e.g. Google Camera App)
+/vendor/dsp/adsp/fastrpc_shell_0                 u:object_r:public_adsprpcd_file:s0
 
 # IR
 /dev/lirc0                                      u:object_r:spidev_device:s0
@@ -29,10 +39,16 @@
 
 # Power HAL
 /vendor/bin/hw/android\.hardware\.power@1\.3-service\.xiaomi_sm6250                                     u:object_r:hal_power_default_exec:s0
+/vendor/bin/hw/android\.hardware\.power-service\.xiaomi_sm6250                                     u:object_r:hal_power_default_exec:s0
 
 # Power
 /vendor/bin/hw/android\.hardware\.power-service\.xiaomi_sm6250                                          u:object_r:hal_power_default_exec:s0
 /vendor/bin/hw/android\.hardware\.power\.stats@1\.0-service\.xiaomi_sm6250                              u:object_r:hal_power_stats_default_exec:s0
+
+# Allow to execute vibration calibrator
+/(vendor|system/vendor)/bin/vibrator_calibration    u:object_r:hal_vibrator_default_exec:s0
+/(vendor|system/vendor)/lib(64)?/libqmi_cci\.so                          u:object_r:same_process_hal_file:s0
+sys/devices/platform/soc/890000.i2c/i2c-1/1-005a(/.*)?  u:object_r:sysfs_vibrator:s0
 
 # WW
 /vendor/bin/hw/android\.hardware\.drm@1\.3-service.widevine 						u:object_r:vendor_hal_drm_widevine_exec:s0

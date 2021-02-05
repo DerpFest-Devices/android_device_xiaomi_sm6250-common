@@ -1,3 +1,5 @@
+type public_adsprpcd_file, file_type;
+
 # Power HAL
 type proc_sched_energy_aware, proc_type, fs_type;
 type sysfs_msm_subsys, sysfs_type, fs_type;
@@ -7,3 +9,6 @@ type sysfs_iio_devices, fs_type, sysfs_type;
 type sysfs_msm_wlan, sysfs_type, fs_type;
 type sysfs_power_stats, sysfs_type, fs_type;
 type sysfs_power_stats_ignore, sysfs_type, fs_type;
+
+type sysfs_scharge, sysfs_type, fs_type;
+type sysfs_touchboost, sysfs_type, fs_type;
