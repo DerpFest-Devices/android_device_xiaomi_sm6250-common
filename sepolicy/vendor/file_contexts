@@ -44,6 +44,10 @@
 /vendor/bin/hw/android\.hardware\.power-service\.xiaomi_sm6250                                          u:object_r:hal_power_default_exec:s0
 /vendor/bin/hw/android\.hardware\.power\.stats@1\.0-service\.xiaomi_sm6250                              u:object_r:hal_power_stats_default_exec:s0
 
+# Sysfs lights
+/sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-05/c440000.qcom,spmi:qcom,pm6150l@5:qcom,leds@d000/leds/white/breath        u:object_r:vendor_sysfs_graphics:s0
+/sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-05/c440000.qcom,spmi:qcom,pm6150l@5:qcom,leds@d000/leds/white/brightness        u:object_r:vendor_sysfs_graphics:s0
+
 # Allow to execute vibration calibrator
 /(vendor|system/vendor)/bin/vibrator_calibration    u:object_r:hal_vibrator_default_exec:s0
 /(vendor|system/vendor)/lib(64)?/libqmi_cci\.so                          u:object_r:same_process_hal_file:s0

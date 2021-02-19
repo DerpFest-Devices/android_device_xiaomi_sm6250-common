@@ -1,1 +1,2 @@
 allow hal_graphics_allocator_default binderfs:chr_file ioctl;
+allow hal_graphics_allocator_default sysfs_msm_subsys:dir search;
