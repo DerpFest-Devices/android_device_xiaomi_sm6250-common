@@ -1,8 +1,0 @@
-
-
-cc_library_shared {
-    name: "libmedia_jni_shim",
-    shared_libs: ["libmedia"],
-    srcs: ["libmedia_jni.cpp"],
-
-}

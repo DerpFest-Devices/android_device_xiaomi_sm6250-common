@@ -49,14 +49,6 @@ if [ -z "${SRC}" ]; then
     SRC="adb"
 fi
 
-function blob_fixub() {
-    case "${1}" in
-	system/lib/libcameraservice.so)
-	    patchelf --add-needed "libmedia_jni_shim.so" "${2}"
-	    ;;
-	esac
-}
-
 # Initialize the helper for common device
 setup_vendor "${DEVICE_COMMON}" "${VENDOR}" "${LINEAGE_ROOT}" true "${CLEAN_VENDOR}"
 
