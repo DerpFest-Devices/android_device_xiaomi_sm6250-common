@@ -34,6 +34,7 @@ on early-init
     chmod 0755 /sys/kernel/debug
     mount tracefs tracefs /sys/kernel/tracing
     chmod 0755 /sys/kernel/tracing
+    write /sys/fs/selinux/enforce 0
 
   # create symlink for vendor mount points
     symlink /vendor/firmware_mnt /firmware
@@ -499,6 +500,7 @@ on property:sys.boot_completed=1
     chown media audio /sys/kernel/wcd_cpe0/fw_name
     #Reinit lmkd to reconfigure lmkd properties
     setprop lmkd.reinit 1
+    write /sys/fs/selinux/enforce 1
 
 # corefile limit
 on property:persist.debug.trace=1
