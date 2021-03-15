@@ -37,4 +37,6 @@ allow battery_daemons self:netlink_kobject_uevent_socket create_socket_perms_no_
 
 allow battery_daemons self:capability { chown fsetid };
 
+allow batterysecret kmsg_device:chr_file w_file_perms;
+
 wakelock_use(battery_daemons)
