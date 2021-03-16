@@ -3,3 +3,7 @@ get_prop(system_server, vendor_camera_prop)
 get_prop(system_server, camera_prop)
 
 allow system_server vendor_sysfs_battery_supply:file rw_file_perms;
+
+binder_call(system_server, init)
+
+allow system_server init:binder transfer;

@@ -1,0 +1,4 @@
+# Xiaomeme
+type hal_misys, domain;
+type hal_misys_hwservice, hwservice_manager_type;
+type hal_mlipay_hwservice, hwservice_manager_type;

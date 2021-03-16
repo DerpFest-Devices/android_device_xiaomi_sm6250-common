@@ -1,2 +1,3 @@
 #============= vendor_qti_init_shell ==============
 allow vendor_qti_init_shell proc_dirty:file { open write };
+allow vendor_qti_init_shell sysfs:file { write };

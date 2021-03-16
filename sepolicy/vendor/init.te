@@ -7,10 +7,15 @@ allow init sysfs_devices_system_cpu:file write;
 allow init sysfs_msm_subsys:file { open read };
 allow init sysfs_vibrator:file read;
 allow init system_server:binder call;
-allow init tee_device:chr_file ioctl;
+allow init tee_device:chr_file { read write ioctl };
+allow init uhid_device:chr_file { read open ioctl };
 allow init vendor_file:file { execute execute_no_trans };
 allow init vendor_latency_device:chr_file { open write };
 allow init vendor_sysfs_devfreq:file { open write };
 allow init vendor_sysfs_fps_attr:file { open read write };
 allow init vendor_sysfs_graphics:file { open write };
 allow init vendor_sysfs_kgsl:file { open write };
+allow init ion_device:chr_file { open ioctl read };
+allow init vendor_configs_file:file mounton;
+
+binder_call(init, hwservicemanager)
