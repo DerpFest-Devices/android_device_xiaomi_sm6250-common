@@ -292,6 +292,10 @@ PRODUCT_PACKAGES += \
     android.hardware.power@1.3-service.xiaomi_sm6250-libperfmgr \
     android.hardware.power.stats@1.0-service.xiaomi_sm6250
 
+# Public libs
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/public.libraries.vendor.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.vendor.txt
+
 # RCS
 PRODUCT_PACKAGES += \
     com.android.ims.rcsmanager \
