@@ -12,3 +12,6 @@ android.hidl.base::IBase                                        u:object_r:hidl_
 
 # Xiaomeme
 vendor.xiaomi.hardware.misys::IMiSys       u:object_r:hal_misys_hwservice:s0
+
+#perf
+vendor.qti.hardware.perf::IPerf         u:object_r:vendor_hal_perf_hwservice:s0

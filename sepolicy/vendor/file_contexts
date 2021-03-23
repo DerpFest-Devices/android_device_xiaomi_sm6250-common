@@ -27,9 +27,11 @@
 # This is labeled as public_adsprpcd_file as it needs to be read by apps
 # (e.g. Google Camera App)
 /(vendor|system/vendor)/dsp/adsp/fastrpc_shell_0                 u:object_r:public_adsprpcd_file:s0
+/(vendor|system/vendor)/dsp/adsp/fastrpc_shell_3                 u:object_r:public_adsprpcd_file:s0
 
-# i2c sepolicy
-sys/devices/platform/soc/890000.i2c/i2c-1/1-005a(/.*)?  u:object_r:sysfs_vibrator:s0
+# i2c sepolicy vibrator
+/sys/devices/platform/soc/890000.i2c/i2c-1/1-005a(/.*)?  u:object_r:sysfs_vibrator:s0
+/sys/devices/platform/soc/890000.i2c/i2c-1/1-005a/wakeup/wakeup8          u:object_r:sysfs_vibrator:s0
 
 # IR
 /dev/lirc0                                      u:object_r:spidev_device:s0

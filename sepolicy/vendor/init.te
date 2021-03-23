@@ -17,9 +17,11 @@ allow init vendor_sysfs_graphics:file { open write };
 allow init vendor_sysfs_kgsl:file { open write };
 allow init ion_device:chr_file { open ioctl read };
 allow init vendor_configs_file:file mounton;
+allow init fingerprint_vendor_data_file:file { rename };
 
 #Goodix fp
 allow init fp_device:chr_file { open read ioctl };
 allow init init:netlink_socket read;
 
+allow init vendor_hal_perf_hwservice:hwservice_manager find;
 binder_call(init, hwservicemanager)
