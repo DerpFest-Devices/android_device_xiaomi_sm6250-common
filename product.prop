@@ -7,9 +7,6 @@ debug.gralloc.enable_fb_ubwc=1
 
 # LMKD
 ro.config.low_ram=false
-ro.lmk.log_stats=true
-ro.lmk.use_psi=true
-ro.lmk.psi_partial_stall_ms=70
 
 # Incremental FS
 ro.incremental.enable=1
