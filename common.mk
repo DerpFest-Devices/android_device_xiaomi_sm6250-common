@@ -107,8 +107,7 @@ TARGET_SCREEN_WIDTH := 1080
 
 # Camera
 PRODUCT_PACKAGES += \
-    libgui_vendor \
-    Snap
+    libgui_vendor
 
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
@@ -119,6 +118,11 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.front.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.front.xml \
     frameworks/native/data/etc/android.hardware.camera.full.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.full.xml \
     frameworks/native/data/etc/android.hardware.camera.raw.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.raw.xml
+
+# MiuiCamera
+#ifeq ($(PRODUCT_NAME),derp_miatoll)
+$(call inherit-product-if-exists, vendor/xiaomi/miuicamera/config.mk)
+#endif
 
 # Display
 PRODUCT_PACKAGES += \
