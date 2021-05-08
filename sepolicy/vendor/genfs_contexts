@@ -2,11 +2,15 @@
 # Battery only for joyeuse - excalibur
 genfscon sysfs /devices/platform/soc/soc:maxim_ds28e16/power_supply/    u:object_r:vendor_sysfs_battery_supply:s0
 genfscon sysfs /devices/platform/soc/soc:maxim_ds28e16/power_supply/batt_verify/type    u:object_r:vendor_sysfs_battery_supply:s0
+genfscon sysfs /devices/soc/c176000.i2c/i2c-2/2-001d u:object_r:sysfs_battery_supply:s0
 
 #brightness
 genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/backlight/panel0-backlight/brightness   u:object_r:sysfs_graphics:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-05/c440000.qcom,spmi:qcom,pm6150l@5:qcom,leds@d000/leds/white/breath    u:object_r:sysfs_graphics:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-05/c440000.qcom,spmi:qcom,pm6150l@5:qcom,leds@d000/leds/white/brightness    u:object_r: vendor_sysfs_graphics:s0
+
+# Camera
+genfscon sysfs /camera_sensorid/sensorid                        u:object_r:sysfs_graphics:s0
 
 #GNSS
 genfscon sysfs /devices/platform/soc/9800000.qcom,npu/subsys6/name    u:object_r:vendor_hal_gnss_qti:s0

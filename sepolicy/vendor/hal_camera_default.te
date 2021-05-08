@@ -1,6 +1,12 @@
 #============= hal_camera_default ==============
+allow hal_camera_default mnt_vendor_file:dir { search };
 allow hal_camera_default mnt_vendor_file:file { getattr open read };
 allow hal_camera_default vendor_default_prop:property_service set;
-allow hal_camera_default default_prop:file { read };
+allow hal_camera_default default_prop:file { open read };
 allow hal_camera_default vendor_xdsp_device:chr_file { read };
-allow hal_camera_default proc_stat:file open;
+allow hal_camera_default proc_stat:file { open read };
+
+# Allow hal_camera_default to read to mnt/vendor/persist/camera
+r_dir_file(hal_camera_default, camera_persist_file)
+r_dir_file(hal_camera_default, mnt_vendor_file)
+get_prop(hal_camera_default, vendor_camera_prop)

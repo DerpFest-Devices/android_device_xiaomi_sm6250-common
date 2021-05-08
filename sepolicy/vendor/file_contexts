@@ -10,6 +10,12 @@
 # ConsumerIR
 /(vendor|system/vendor)/bin/hw/android\.hardware\.ir@1\.0-service\.miatoll                                          u:object_r:hal_ir_default_exec:s0
 
+# Camera
+/mnt/vendor/persist/camera(/.*)? u:object_r:camera_persist_file:s0
+
+# Device Nodes
+/dev/stune(/.*)?                                        u:object_r:cgroup:s0
+
 #elliptic sensor
 /dev/elliptic1		u:object_r:sensors_device:s0
 /dev/elliptic0		u:object_r:sensors_device:s0
@@ -22,6 +28,9 @@
 /dev/goodix_fp                                  u:object_r:fp_device:s0
 
 /(vendor|system/vendor)/bin/hw/android\.hardware\.fingerprint@2\.1-service\.xiaomi_sm6250                               u:object_r:vendor_hal_fingerprint_exec:s0
+
+# FPS Info
+/sys/class/drm/sde-crtc-0/measured_fps                       u:object_r:sysfs_fps:s0
 
 # Hexagon DSP-side executable needed for Halide operation
 # This is labeled as public_adsprpcd_file as it needs to be read by apps
