@@ -19,6 +19,5 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- Indication on the keyguard that is shown when the device is charging rapidly. Should match keyguard_plugged_in_charging_fast [CHAR LIMIT=50]-->
-    <string name="keyguard_indication_charging_time_fast"><xliff:g id="percentage">%2$s</xliff:g> • ChargeTurbo (<xliff:g id="charging_time_left" example="4 hours and 2 minutes">%1$s</xliff:g> para completar)</string>
-
+    <string name="keyguard_indication_charging_time_fast" msgid="7895986003578341126">"<xliff:g id="PERCENTAGE">%2$s</xliff:g> • ChargeTurbo（完了まで <xliff:g id="CHARGING_TIME_LEFT">%1$s</xliff:g>）"</string>
 </resources>
