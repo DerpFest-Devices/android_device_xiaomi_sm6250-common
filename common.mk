@@ -16,9 +16,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
-# OTA overlay
-$(call inherit-product, device/xiaomi/sm6250-common/updater_ota.mk)
-
 # AID/fs configs
 PRODUCT_PACKAGES += \
     fs_config_files
