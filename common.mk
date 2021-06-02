@@ -125,9 +125,6 @@ PRODUCT_COPY_FILES += \
 $(call inherit-product-if-exists, vendor/xiaomi/miuicamera/config.mk)
 #endif
 
-# Dex
-PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := everything
-
 # Display
 PRODUCT_PACKAGES += \
     disable_configstore \
@@ -330,6 +327,8 @@ PRODUCT_PACKAGES += \
 
 # Minijail
 PRODUCT_PACKAGES += \
+    libminijail \
+    libavservices_minijail \
     libavservices_minijail.vendor
 
 # Network
