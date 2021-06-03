@@ -454,6 +454,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.vibrator.service \
     libqtivibratoreffect
 
+PRODUCT_COPY_FILES += \
+      vendor/qcom/opensource/vibrator/excluded-input-devices.xml:vendor/etc/excluded-input-devices.xml
+
 # VNDK
 PRODUCT_COPY_FILES += \
     prebuilts/vndk/v29/arm64/arch-arm64-armv8-a/shared/vndk-core/libhidlcache.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhidlcache.so
