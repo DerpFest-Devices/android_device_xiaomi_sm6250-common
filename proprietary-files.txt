@@ -1383,11 +1383,18 @@ vendor/firmware/novatek_ts_tianma_mp.bin
 
 # Vibrator
 vendor/bin/vibrator_calibration
+vendor/bin/hw/vendor.xiaomi.hardware.vibratorfeature@1.0-service
+vendor/etc/calib.config
+vendor/etc/init/vendor.xiaomi.hardware.vibratorfeature@1.0-service.rc
 vendor/firmware/aw8624_haptic.bin
 vendor/firmware/aw8624_rtp.bin
 vendor/firmware/drv2624.bin
 vendor/firmware/drv2624.rtp
 vendor/firmware/Drv2624Date.ini
+vendor/lib/vendor.xiaomi.hardware.vibratorfeature@1.0.so
+vendor/lib/hw/vendor.xiaomi.hardware.vibratorfeature@1.0.so
+vendor/lib64/vendor.xiaomi.hardware.vibratorfeature@1.0.so
+vendor/lib64/hw/vendor.xiaomi.hardware.vibratorfeature@1.0.so
 
 # WiFi
 vendor/bin/cnss-daemon
