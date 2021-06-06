@@ -1393,8 +1393,8 @@ vendor/firmware/drv2624.rtp
 vendor/firmware/Drv2624Date.ini
 vendor/lib/vendor.xiaomi.hardware.vibratorfeature@1.0.so
 vendor/lib/hw/vendor.xiaomi.hardware.vibratorfeature@1.0.so
-vendor/lib64/vendor.xiaomi.hardware.vibratorfeature@1.0.so
-vendor/lib64/hw/vendor.xiaomi.hardware.vibratorfeature@1.0.so
+vendor/lib64/vendor.xiaomi.hardware.vibratorfeature@1.0-impl.so
+vendor/lib64/hw/vendor.xiaomi.hardware.vibratorfeature@1.0-impl.so
 
 # WiFi
 vendor/bin/cnss-daemon
@@ -1512,3 +1512,10 @@ vendor/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so
 #vendor/lib64/libUSTANative.so
 #vendor/lib64/libwvkeybox.so
 #vendor/lib64/vendor.qti.hardware.automotive.vehicle@1.0.so
+
+-product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk
+-product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk
+product/etc/permissions/privapp-permissions-hotword.xml
+system/etc/sysconfig/hotword-hiddenapi-package-whitelist.xml
+system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
+system_ext/framework/com.android.hotwordenrollment.common.util.jar
