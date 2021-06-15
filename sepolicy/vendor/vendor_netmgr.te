@@ -1,4 +1,0 @@
-allow vendor_netmgrd vendor_hal_gnss_qti:file read;
-allow vendor_port-bridge vendor_hal_gnss_qti:file read;
-allow vendor_per_proxy vendor_hal_gnss_qti:file read;
-allow vendor_netmgrd sysfs:file { read };

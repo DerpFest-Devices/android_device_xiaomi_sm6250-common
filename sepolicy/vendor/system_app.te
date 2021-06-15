@@ -1,21 +1,4 @@
-#============= system_app ==============
-#for rendethread
-allow system_app sysfs_msm_subsys:dir search;
-
-allow system_app sysfs_scharge:file { getattr open write };
-
-allow system_app sysfs_touchboost:file { open read getattr write };
-allow system_app sysfs_touchboost:dir search;
-
-# allow system apps to read battery status
-r_dir_file(system_app, vendor_sysfs_battery_supply)
-allow system_app vendor_sysfs_battery_supply:file { open read };
-
-allow system_app vendor_default_prop:file { getattr open read };
-allow system_app vendor_default_prop:file {map};
-allow system_app selinuxfs:file { read open };
-allow system_app sysfs_zram:dir { search };
-
+get_prop(system_app, vendor_wlan_prop)
 allow system_app vendor_sysfs_graphics:file { getattr open read };
 allow system_app vendor_sysfs_msm_perf:dir { search };
 allow system_app apk_data_file:dir { write };

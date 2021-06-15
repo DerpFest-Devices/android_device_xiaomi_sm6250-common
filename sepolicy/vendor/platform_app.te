@@ -1,8 +1,0 @@
-#============= platform_app ==============
-# Google camera shits
-allow platform_app sysfs_msm_subsys:dir search;
-allow platform_app vendor_default_prop:file { getattr map open };
-allow platform_app vendor_audio_prop:file { open read };
-allow platform_app cgroup:file { open read };
-allow platform_app vendor_xdsp_device:chr_file { read };
-allow platform_app adsprpcd_file:dir { getattr search };

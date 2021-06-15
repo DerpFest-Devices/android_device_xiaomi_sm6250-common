@@ -1,2 +1,1 @@
-#============= vdc ==============
-allow vdc self:capability kill;
+dontaudit vdc self:capability kill;

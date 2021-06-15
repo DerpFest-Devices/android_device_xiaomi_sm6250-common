@@ -1,2 +1,0 @@
-#============= vendor_hal_gnss_qti ==============
-allow vendor_hal_gnss_qti sysfs:file { open read };

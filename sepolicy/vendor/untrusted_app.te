@@ -1,4 +1,0 @@
-#============= untrusted_app ==============
-allow untrusted_app sysfs_msm_subsys:dir search;
-# allow to read the gpu_model chip ID
-allow untrusted_app_27 sysfs_msm_subsys:dir search;

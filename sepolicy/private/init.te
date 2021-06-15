@@ -1,2 +1,0 @@
-#Allow init to setenforce
-allow init kernel : security setenforce;

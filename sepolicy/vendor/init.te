@@ -1,27 +1,4 @@
-#============= init ==============
-allow init adsprpcd_file:file mounton;
-allow init proc_sched_energy_aware:file { open write };
-allow init self:qipcrtr_socket create;
-allow init sysfs:file { open write };
-allow init sysfs_devices_system_cpu:file write;
-allow init sysfs_msm_subsys:file { open read };
-allow init sysfs_vibrator:file read;
-allow init system_server:binder call;
-allow init tee_device:chr_file { read write ioctl };
-allow init uhid_device:chr_file { read open ioctl };
-allow init vendor_file:file { execute execute_no_trans };
-allow init vendor_latency_device:chr_file { open write };
-allow init vendor_sysfs_devfreq:file { open write };
-allow init vendor_sysfs_fps_attr:file { open read write };
-allow init vendor_sysfs_graphics:file { open write };
-allow init vendor_sysfs_kgsl:file { open write };
-allow init ion_device:chr_file { open ioctl read };
+# Allow init to bind mount vendor configs file
 allow init vendor_configs_file:file mounton;
-allow init fingerprint_vendor_data_file:file { rename };
 
-#Goodix fp
-allow init fp_device:chr_file { open read ioctl };
-allow init init:netlink_socket read;
-
-allow init vendor_hal_perf_hwservice:hwservice_manager find;
-binder_call(init, hwservicemanager)
+allow init adsprpcd_file:file mounton;

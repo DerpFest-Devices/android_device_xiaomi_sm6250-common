@@ -10,10 +10,10 @@ vendor.xiaomi.hardware.mlipay::IMlipayService                           u:object
 
 android.hidl.base::IBase                                        u:object_r:hidl_base_hwservice:s0
 
-# Xiaomeme
-vendor.xiaomi.hardware.misys::IMiSys       u:object_r:hal_misys_hwservice:s0
-
 #perf
 vendor.qti.hardware.perf::IPerf         u:object_r:vendor_hal_perf_hwservice:s0
 
 vendor.xiaomi.hardware.vibratorfeature::IVibratorFeature	u:object_r:vendor_hal_vibratorfeature_hwservice:s0
+
+# Xiaomeme
+vendor.xiaomi.hardware.misys::IMiSys       u:object_r:hal_misys_hwservice:s0

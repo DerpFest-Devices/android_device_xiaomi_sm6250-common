@@ -1,3 +1,0 @@
-#============= rild ==============
-allow rild default_prop:file { getattr map open read };
-allow rild vendor_hal_gnss_qti:file { read open };

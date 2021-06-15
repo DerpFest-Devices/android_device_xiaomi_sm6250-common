@@ -1,3 +1,0 @@
-#============= vendor_ims ==============
-allow vendor_ims sysfs:file { open read };
-allow vendor_ims vendor_hal_gnss_qti:file { read open };
