@@ -92,9 +92,31 @@
       "Name": "TASchedtuneBoost",
       "Path": "/dev/stune/top-app/schedtune.boost",
       "Values": [
-        "10",
-        "5"
+        "30",
+        "10"
       ],
+      "ResetOnInit": true
+    },
+    {
+      "Name": "CDSchedtuneBoost",
+      "Path": "/dev/stune/schedtune.boost",
+      "Values": [
+        "10",
+        "8",
+        "0"
+      ],
+      "DefaultIndex": 2,
+      "ResetOnInit": true
+    },
+    {
+      "Name": "CDForeSchedtuneBoost",
+      "Path": "/dev/stune/foreground/schedtune.boost",
+      "Values": [
+        "10",
+        "8",
+        "0"
+      ],
+      "DefaultIndex": 2,
       "ResetOnInit": true
     },
     {
@@ -255,7 +277,7 @@
       "PowerHint": "INTERACTION",
       "Node": "TASchedtuneBoost",
       "Duration": 0,
-      "Value": "10"
+      "Value": "30"
     },
     {
       "PowerHint": "INTERACTION",
