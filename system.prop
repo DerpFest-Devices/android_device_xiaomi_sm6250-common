@@ -139,3 +139,5 @@ persist.sys.wfd.virtual=0
 
 ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural
 
+#Disable rescue party sometimes is fucked and the rom wants clean shit
+persist.device_config.configuration.disable_rescue_party=true
