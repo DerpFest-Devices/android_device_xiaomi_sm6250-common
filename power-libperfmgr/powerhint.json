@@ -281,6 +281,18 @@
     },
     {
       "PowerHint": "INTERACTION",
+      "Node": "CDSchedtuneBoost",
+      "Duration": 0,
+      "Value": "8"
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "CDForeSchedtuneBoost",
+      "Duration": 0,
+      "Value": "8"
+    },
+    {
+      "PowerHint": "INTERACTION",
       "Node": "CPUBWHystTriggerCount",
       "Duration": 0,
       "Value": "0"
