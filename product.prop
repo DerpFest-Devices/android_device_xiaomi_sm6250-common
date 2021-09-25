@@ -1,10 +1,6 @@
 # Charger
 ro.charger.enable_suspend=true
 
-# Display 
-ro.surface_flinger.has_wide_color_display=true
-ro.surface_flinger.has_HDR_display=true
-
 # Graphics
 debug.sf.hw=1
 debug.gralloc.enable_fb_ubwc=1

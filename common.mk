@@ -109,6 +109,15 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.mapper@2.0.vendor \
     vendor.qti.hardware.display.mapper@4.0.vendor
 
+# Netflix display changes
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.surface_flinger.has_wide_color_display=true \
+    ro.surface_flinger.has_HDR_display=true
+
+# Target specific Netflix custom property
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.netflix.bsp_rev=Q6250-19132-1
+
 # Doze
 PRODUCT_PACKAGES += \
     XPerienceDoze
