@@ -787,4 +787,7 @@
     <integer-array name="config_keyboardTapVibePattern">
         <item>10</item>
     </integer-array>
+
+    <!-- Used to decide if there should be a disable option -->
+    <bool name="config_intrusiveBatteryLed">true</bool>
 </resources>
