@@ -1,4 +1,4 @@
-allow hal_vibrator_default mnt_vendor_file:file { read write};
+allow hal_vibrator_default mnt_vendor_file:file rw_file_perms;
 allow hal_vibrator_default hal_vibrator_default:qipcrtr_socket create;
-allow hal_vibrator_default sysfs:file { read open write};
+allow hal_vibrator_default sysfs:file rw_file_perms;
 allow vendor_hal_perf_default sysfs_msm_subsys:dir r_dir_perms;

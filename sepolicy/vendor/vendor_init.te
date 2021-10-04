@@ -17,6 +17,6 @@ set_prop(vendor_init, vendor_radio_prop)
 set_prop(vendor_init, vendor_ssr_prop)
 set_prop(vendor_init, vendor_wfd_prop)
 set_prop(vendor_init, vendor_cnd_prop)
-
+set_prop(vendor_init, power_prop)
 get_prop(vendor_init, persist_debug_prop)
 get_prop(vendor_init, default_prop)

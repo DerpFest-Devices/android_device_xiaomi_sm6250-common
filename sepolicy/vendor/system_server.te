@@ -4,3 +4,5 @@ get_prop(system_server, camera_prop)
 get_prop(system_server, vendor_display_notch_prop)
 
 set_prop(system_server, vendor_wfd_prop)
+#Fast charger mode
+allow system_server vendor_sysfs_battery_supply:file read;
