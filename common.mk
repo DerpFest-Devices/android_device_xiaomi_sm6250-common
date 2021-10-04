@@ -423,10 +423,10 @@ PRODUCT_COPY_FILES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.vibrator@1.2-service
+    vendor.qti.hardware.vibrator.service
 
 PRODUCT_COPY_FILES += \
-      vendor/qcom/opensource/vibrator/excluded-input-devices.xml:vendor/etc/excluded-input-devices.xml
+      $(LOCAL_PATH)/vibrator/excluded-input-devices.xml:vendor/etc/excluded-input-devices.xml
 
 # VNDK
 PRODUCT_COPY_FILES += \
