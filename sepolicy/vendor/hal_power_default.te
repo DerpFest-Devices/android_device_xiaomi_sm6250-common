@@ -18,5 +18,6 @@ allow hal_power_default vendor_latency_device:chr_file rw_file_perms;
 dontaudit hal_power_default cgroup:file read;
 
 # power hal libperfmgr: Failed to write to node: /sys/class/kgsl/kgsl-3d0/max_pwrlevel
-allow hal_power_default vendor_sysfs_kgsl:file write;
+allow hal_power_default vendor_sysfs_kgsl:file rw_file_perms;
 allow hal_power_default vendor_sysfs_devfreq:dir search;
+allow hal_power_default vendor_sysfs_devfreq:file rw_file_perms;
